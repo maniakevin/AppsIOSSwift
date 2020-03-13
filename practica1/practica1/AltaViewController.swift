@@ -18,7 +18,7 @@ class AltaViewController: UIViewController, UIImagePickerControllerDelegate, UIN
     @IBOutlet weak var txtNombre: UITextField!
     @IBOutlet weak var txtDescipcionHD: UITextField!
     @IBOutlet weak var imagen: UIImageView!
-    @IBAction func onSubirImagen(_ sender: Any) {
+    @IBAction func onSubirImagen(_ sender: UIBarButtonItem) {
         let imagePicker = UIImagePickerController()
         present(imagePicker, animated: true, completion: nil)
         imagePicker.delegate = self
